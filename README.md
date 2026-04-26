@@ -44,7 +44,7 @@ youtube_app/
 ├── global_youtube_statistics.csv
 ├── requirements.txt
 └── style.py
-
+```
 
 ---
 
