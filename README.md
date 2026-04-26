@@ -2,6 +2,8 @@
 
 Aplicație interactivă dezvoltată în **Python (Streamlit)** și **SAS**, care analizează performanța celor mai mari canale YouTube la nivel global.
 
+Proiect realizat în cadrul cursului Pachete Software de către Sfetcu Andreea și Scînteie Mălina, având ca obiectiv dezvoltarea unei aplicații interactive pentru analiza datelor unei organizații, utilizând Python și SAS.
+
 ---
 
 ##  Funcționalități principale
@@ -24,20 +26,20 @@ Aplicație interactivă dezvoltată în **Python (Streamlit)** și **SAS**, care
 
 ---
 
-##  Structura aplicației
+## Structura aplicației
 
-
+```text
 youtube_app/
 │
 ├── Home.py
 ├── pages/
-│ ├── Date_si_Statistici.py
-│ ├── Filtrare_Interactiva.py
-│ ├── Vizualizari.py
-│ ├── Preprocesare.py
-│ ├── Machine_Learning.py
-│ ├── Regresie_Metrici.py
-│ └── Concluzii.py
+│   ├── Date_si_Statistici.py
+│   ├── Filtrare_Interactiva.py
+│   ├── Vizualizari.py
+│   ├── Preprocesare.py
+│   ├── Machine_Learning.py
+│   ├── Regresie_Metrici.py
+│   └── Concluzii.py
 │
 ├── global_youtube_statistics.csv
 ├── requirements.txt
@@ -77,6 +79,3 @@ Pentru rulare locală:
 
 ```bash
 streamlit run Home.py
-
-
-Proiect realizat în cadrul cursului Pachete Software de către Sfetcu Andreea și Scînteie Mălina, având ca obiectiv dezvoltarea unei aplicații interactive pentru analiza datelor unei organizații, utilizând Python și SAS.
