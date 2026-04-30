@@ -220,7 +220,10 @@ else:
         X_tr, X_te, y_tr, y_te = train_test_split(
             X_lr_s, y_lr, test_size=test_size, random_state=lr_random, stratify=y_lr
         )
-        lr = LogisticRegression(max_iter=max_iter, random_state=lr_random, multi_class="multinomial")
+        lr = LogisticRegression(
+    max_iter=max_iter,
+    random_state=lr_random
+)
         lr.fit(X_tr, y_tr)
         y_pred = lr.predict(X_te)
 
