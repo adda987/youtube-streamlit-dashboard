@@ -193,6 +193,22 @@ PROC SGPLOT DATA = youtube.yt_procesat;
     SCATTER X=log_subscribers Y=log_earnings;
 RUN;
 
+/* CERINTA 10 - Utilizarea de masive */
+
+DATA youtube.yt_procesat_array;
+    SET youtube.yt_procesat;
+
+    ARRAY indicatori[4] subscribers video_views yearly_earnings_avg engagement_rate;
+    ARRAY indicatori_norm[4] norm_subscribers norm_views norm_earnings norm_engagement;
+
+    DO i = 1 TO DIM(indicatori);
+        IF indicatori[i] > 0 THEN indicatori_norm[i] = indicatori[i] / (indicatori[i] + 1);
+        ELSE indicatori_norm[i] = 0;
+    END;
+
+    DROP i;
+RUN;
+
 PROC EXPORT
     DATA    = youtube.yt_procesat
     OUTFILE = "/home/u64464196/Proiect/yt_final_procesat.csv"
